@@ -1,0 +1,147 @@
+body{
+  color: rgb(255, 255, 255);
+  padding: 0;
+  margin: 0;
+}
+
+.container-all{
+  background-image: url('../public/assets/fondo2.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+h1{
+  text-align: center;
+  padding-top: 50px;
+  position: relative;
+  font-size: 3rem;
+  text-shadow:1.5px 1.5px 1.5px rgba(255, 255, 255, 0.493);
+}
+
+h1::after{
+  content: "GALLETAS DE LA FORTUNA";
+  color: rgba(0, 0, 0, 0.685);
+  opacity: 0.1;
+  position: absolute;
+  top: 56px;
+  left: 323px;
+  text-align: center;
+}
+
+p{
+  text-align: center;
+  font-size: 2rem;
+  padding: 5px 25px;
+  color: black
+}
+
+button{
+  display: block;
+  margin-left: 560px;
+  cursor: pointer;
+  margin-top: 50px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid white;
+  background-color: rgba(182, 180, 180, 0.829);
+  font-size: 1.2rem;
+  transition: .5s;
+  font-weight: bold;
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+.container-phrase{
+  width: 700px;
+  height: 100%;
+  background-color: white;
+  margin-left: 300px;
+  border: 5px solid white;
+  border-radius: 15px 10px;
+}
+
+p:nth-child(2){
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+
+    .container-phrase{
+      margin: 0 auto;
+      max-width: 80%;
+      height: 200px;
+    }
+    h1{
+      font-size: 2rem;
+    }
+    p{
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    button{
+      margin: 0 auto;
+      padding: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    button{
+      margin-top: 20px;
+    }
+    h1::after{
+      visibility: hidden;
+    }
+
+    .content-phrase-author{
+     margin-top: -20px;
+     padding: 20px 10px;
+    }
+    
+    .author{
+      color: black;
+      font-size: 50rem;
+      font-weight: bold;
+      padding-bottom: 20px;
+      padding-top: 40px;
+    }
+   
+}  
+
+@media screen and (min-width:481px) and (max-width:1024px){
+  .container-phrase{
+    margin: 0 auto;
+    max-width: 80%;
+    height: 200px;
+  }
+  h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  h1::after{
+    visibility: hidden;
+  }
+  
+  button{
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto;
+  }
+  button{
+    margin-top: 30px;
+  }
+  .author{
+   height: 30px;
+   width: 300px;
+   position: absolute;
+   bottom: 180px;
+  }
+}
+
+
+
+
+    
